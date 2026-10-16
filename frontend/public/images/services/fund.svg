@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Mutual Funds">
+<rect width="900" height="560" fill="#f5f2e9"/>
+<circle cx="120" cy="105" r="95" fill="#e7dfca" opacity=".7"/>
+<circle cx="800" cy="485" r="140" fill="#e7dfca" opacity=".55"/>
+<path d="M0 475 Q180 425 340 475 T900 460 V560 H0Z" fill="#eae4d4"/>
+<g transform="translate(0 0)"><ellipse cx="360" cy="390" rx="88" ry="32" fill="#e9c66c" stroke="#173052" stroke-width="8"/><path d="M272 345 V390 Q360 450 448 390 V345" fill="#f6e7be" stroke="#173052" stroke-width="8"/><ellipse cx="360" cy="345" rx="88" ry="32" fill="#f6e7be" stroke="#173052" stroke-width="8"/><ellipse cx="520" cy="300" rx="76" ry="29" fill="#e9c66c" stroke="#173052" stroke-width="8"/><path d="M444 255 V300 Q520 355 596 300 V255" fill="#f6e7be" stroke="#173052" stroke-width="8"/><ellipse cx="520" cy="255" rx="76" ry="29" fill="#f6e7be" stroke="#173052" stroke-width="8"/><path d="M360 330 V365 M345 342 H375 M520 240 V270 M505 252 H535" stroke="#173052" stroke-width="7" stroke-linecap="round"/></g>
+<path d="M110 500 H790" stroke="#d1c6ad" stroke-width="2"/>
+<circle cx="760" cy="100" r="22" fill="#c18a19" opacity=".8"/>
+</svg>

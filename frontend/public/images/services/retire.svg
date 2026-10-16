@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Retirement Planning">
+<rect width="900" height="560" fill="#f5f2e9"/>
+<circle cx="120" cy="105" r="95" fill="#e7dfca" opacity=".7"/>
+<circle cx="800" cy="485" r="140" fill="#e7dfca" opacity=".55"/>
+<path d="M0 475 Q180 425 340 475 T900 460 V560 H0Z" fill="#eae4d4"/>
+<g transform="translate(0 0)"><circle cx="450" cy="300" r="112" fill="#f3d88f"/><path d="M250 405 Q340 350 450 400 Q565 340 650 400" fill="none" stroke="#173052" stroke-width="12" stroke-linecap="round"/><path d="M270 445 Q365 405 450 445 Q540 405 630 445" fill="none" stroke="#c18a19" stroke-width="10" stroke-linecap="round"/><path d="M450 188 V230 M340 220 L370 250 M560 220 L530 250" stroke="#c18a19" stroke-width="9" stroke-linecap="round"/><path d="M450 300 L450 235 M450 300 L505 330" stroke="#173052" stroke-width="11" stroke-linecap="round"/><circle cx="450" cy="300" r="8" fill="#173052"/></g>
+<path d="M110 500 H790" stroke="#d1c6ad" stroke-width="2"/>
+<circle cx="760" cy="100" r="22" fill="#c18a19" opacity=".8"/>
+</svg>

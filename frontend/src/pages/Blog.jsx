@@ -1,0 +1,19 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
+import { Layout, PageHero } from '../components/Shared.jsx';
+import { useLang, L } from '../i18n.jsx';
+
+const posts = [
+  { title: L('How To Choose The Right Life Insurance', 'सही जीवन बीमा कैसे चुनें', 'Sahi Life Insurance Kaise Chunein'), category: L('Life Insurance', 'जीवन बीमा', 'Life Insurance'), text: L('Understand your family’s needs, compare the cover amount, review exclusions and choose a premium that fits your budget.', 'अपने परिवार की ज़रूरतें समझें, कवर राशि की तुलना करें, अपवाद देखें और ऐसा प्रीमियम चुनें जो आपके बजट में आए।', 'Apne parivaar ki zaroorat samjhein, cover amount ki tulna karein, exclusions dekhein aur aisa premium chunein jo aapke budget me aaye.') },
+  { title: L('Health Insurance: What To Check Before You Buy', 'हेल्थ इंश्योरेंस: खरीदने से पहले क्या जाँचें', 'Health Insurance: Kharidne Se Pehle Kya Check Karein'), category: L('Health Insurance', 'स्वास्थ्य बीमा', 'Health Insurance'), text: L('Compare waiting periods, room-rent limits, co-payments, network hospitals and the claim process—not just the premium.', 'सिर्फ़ प्रीमियम नहीं, प्रतीक्षा अवधि, कमरे के किराये की सीमा, को-पेमेंट, नेटवर्क अस्पताल और क्लेम प्रक्रिया की भी तुलना करें।', 'Sirf premium nahi, waiting periods, room-rent limits, co-payments, network hospitals aur claim process ki bhi tulna karein.') },
+  { title: L('Start Planning For Your Child’s Education', 'अपने बच्चे की शिक्षा की योजना शुरू करें', 'Apne Bachche ki Education ki Planning Shuru Karein'), category: L('Financial Planning', 'वित्तीय योजना', 'Financial Planning'), text: L('Set a target date, estimate future costs, review your current savings and choose a monthly contribution you can maintain.', 'लक्ष्य तिथि तय करें, भविष्य के खर्च का अनुमान लगाएँ, मौजूदा बचत की समीक्षा करें और ऐसी मासिक राशि चुनें जिसे आप निभा सकें।', 'Target date tay karein, future costs ka andaaza lagayein, current savings ka review karein aur aisi monthly amount chunein jise aap nibha sakein.') },
+  { title: L('SIP And Mutual Funds: The Basics', 'SIP और म्यूचुअल फंड: बुनियादी बातें', 'SIP aur Mutual Funds: Basics'), category: L('Investing', 'निवेश', 'Investing'), text: L('Learn how SIPs work, match investments to your time horizon and remember that market returns are not guaranteed.', 'जानें कि SIP कैसे काम करती है, निवेश को अपनी समय-सीमा से मिलाएँ और याद रखें कि बाज़ार रिटर्न की गारंटी नहीं होती।', 'Jaanein ki SIP kaise kaam karti hai, investments ko apne time horizon se match karein aur yaad rakhein ki market returns ki guarantee nahi hoti.') },
+];
+export default function Blog() {
+  const { t, tr } = useLang();
+  return <Layout title={t('Blog', 'ब्लॉग', 'Blog')} desc={t('Practical financial guidance on insurance, investments, savings and family financial planning.', 'बीमा, निवेश, बचत और पारिवारिक वित्तीय योजना पर व्यावहारिक मार्गदर्शन।', 'Insurance, investments, savings aur family financial planning par practical guidance.')}>
+    <PageHero eyebrow={t('Our Blog', 'हमारा ब्लॉग', 'Hamara Blog')} title={t('Clear Insights For Smarter Financial Decisions.', 'समझदार वित्तीय फ़ैसलों के लिए स्पष्ट जानकारी।', 'Smarter Financial Faislon ke liye Clear Insights.')} desc={t('Straightforward guides to help you understand your options and plan with confidence.', 'सीधी-सादी गाइड, जो आपके विकल्प समझने और आत्मविश्वास से योजना बनाने में मदद करें।', 'Seedhi-saadi guides, jo aapke options samajhne aur confidence se planning karne me madad karein.')} />
+    <section className="section"><div className="wrap blog-grid">{posts.map((p, i) => <article className="blog-card" key={i}><span className="eyebrow">{tr(p.category)}</span><h2>{tr(p.title)}</h2><p>{tr(p.text)}</p><Link className="text-link" to="/contact">{t('Discuss Your Needs', 'अपनी ज़रूरतों पर चर्चा करें', 'Apni Zaroorat par Charcha Karein')} <ArrowRight size={15} /></Link></article>)}</div></section>
+  </Layout>;
+}

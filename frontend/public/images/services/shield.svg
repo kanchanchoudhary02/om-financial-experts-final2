@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Income Protection">
+<rect width="900" height="560" fill="#f5f2e9"/>
+<circle cx="120" cy="105" r="95" fill="#e7dfca" opacity=".7"/>
+<circle cx="800" cy="485" r="140" fill="#e7dfca" opacity=".55"/>
+<path d="M0 475 Q180 425 340 475 T900 460 V560 H0Z" fill="#eae4d4"/>
+<g transform="translate(0 0)"><path d="M450 160 L570 205 V320 C570 405 515 465 450 500 C385 465 330 405 330 320 V205 Z" fill="#fff" stroke="#173052" stroke-width="12"/><path d="M450 205 L530 235 V320 C530 380 492 425 450 450 C408 425 370 380 370 320 V235 Z" fill="#f6e7be" stroke="#c18a19" stroke-width="7"/><path d="M405 323 L438 356 L500 285" fill="none" stroke="#173052" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path d="M110 500 H790" stroke="#d1c6ad" stroke-width="2"/>
+<circle cx="760" cy="100" r="22" fill="#c18a19" opacity=".8"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Life Goals">
+<rect width="900" height="560" fill="#f5f2e9"/>
+<circle cx="120" cy="105" r="95" fill="#e7dfca" opacity=".7"/>
+<circle cx="800" cy="485" r="140" fill="#e7dfca" opacity=".55"/>
+<path d="M0 475 Q180 425 340 475 T900 460 V560 H0Z" fill="#eae4d4"/>
+<g transform="translate(0 0)"><circle cx="450" cy="325" r="145" fill="#fff" stroke="#173052" stroke-width="10"/><circle cx="450" cy="325" r="100" fill="#f6e7be" stroke="#c18a19" stroke-width="9"/><circle cx="450" cy="325" r="52" fill="#fff" stroke="#173052" stroke-width="8"/><path d="M455 320 L575 205" stroke="#c18a19" stroke-width="13" stroke-linecap="round"/><path d="M535 205 H575 V245" fill="none" stroke="#c18a19" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path d="M110 500 H790" stroke="#d1c6ad" stroke-width="2"/>
+<circle cx="760" cy="100" r="22" fill="#c18a19" opacity=".8"/>
+</svg>

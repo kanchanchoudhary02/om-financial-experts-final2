@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Education Planning">
+<rect width="900" height="560" fill="#f5f2e9"/>
+<circle cx="120" cy="105" r="95" fill="#e7dfca" opacity=".7"/>
+<circle cx="800" cy="485" r="140" fill="#e7dfca" opacity=".55"/>
+<path d="M0 475 Q180 425 340 475 T900 460 V560 H0Z" fill="#eae4d4"/>
+<g transform="translate(0 0)"><path d="M250 245 Q340 210 450 260 Q560 210 650 245 V440 Q555 405 450 455 Q345 405 250 440 Z" fill="#fff" stroke="#173052" stroke-width="11"/><path d="M450 260 V455" stroke="#c18a19" stroke-width="8"/><path d="M295 290 Q355 280 405 305 M295 330 Q355 320 405 345 M495 305 Q555 280 605 290 M495 345 Q555 320 605 330" fill="none" stroke="#c18a19" stroke-width="8" stroke-linecap="round"/><path d="M345 180 L400 180 L400 235 L345 235 Z M420 155 L475 155 L475 235 L420 235 Z M495 195 L550 195 L550 235 L495 235 Z" fill="#e9c66c" stroke="#173052" stroke-width="5"/></g>
+<path d="M110 500 H790" stroke="#d1c6ad" stroke-width="2"/>
+<circle cx="760" cy="100" r="22" fill="#c18a19" opacity=".8"/>
+</svg>

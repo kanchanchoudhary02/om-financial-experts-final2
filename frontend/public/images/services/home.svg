@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Home Loan">
+<rect width="900" height="560" fill="#f5f2e9"/>
+<circle cx="120" cy="105" r="95" fill="#e7dfca" opacity=".7"/>
+<circle cx="800" cy="485" r="140" fill="#e7dfca" opacity=".55"/>
+<path d="M0 475 Q180 425 340 475 T900 460 V560 H0Z" fill="#eae4d4"/>
+<g transform="translate(0 0)"><path d="M255 320 L450 165 L645 320" fill="#f6e7be" stroke="#173052" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/><path d="M300 300 V460 H600 V300" fill="#fff" stroke="#173052" stroke-width="11"/><rect x="410" y="350" width="80" height="110" rx="8" fill="#e9c66c" stroke="#173052" stroke-width="8"/><rect x="335" y="335" width="50" height="55" fill="#dce5ec" stroke="#173052" stroke-width="7"/><rect x="515" y="335" width="50" height="55" fill="#dce5ec" stroke="#173052" stroke-width="7"/></g>
+<path d="M110 500 H790" stroke="#d1c6ad" stroke-width="2"/>
+<circle cx="760" cy="100" r="22" fill="#c18a19" opacity=".8"/>
+</svg>

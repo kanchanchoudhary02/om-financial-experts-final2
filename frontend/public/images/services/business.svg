@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Business Loans">
+<rect width="900" height="560" fill="#f5f2e9"/>
+<circle cx="120" cy="105" r="95" fill="#e7dfca" opacity=".7"/>
+<circle cx="800" cy="485" r="140" fill="#e7dfca" opacity=".55"/>
+<path d="M0 475 Q180 425 340 475 T900 460 V560 H0Z" fill="#eae4d4"/>
+<g transform="translate(0 0)"><rect x="285" y="265" width="130" height="195" rx="8" fill="#fff" stroke="#173052" stroke-width="9"/><rect x="415" y="190" width="145" height="270" rx="8" fill="#f6e7be" stroke="#173052" stroke-width="9"/><rect x="560" y="305" width="70" height="155" rx="8" fill="#fff" stroke="#173052" stroke-width="9"/><g fill="#c18a19"><rect x="315" y="300" width="28" height="28" rx="3"/><rect x="360" y="300" width="28" height="28" rx="3"/><rect x="315" y="350" width="28" height="28" rx="3"/><rect x="360" y="350" width="28" height="28" rx="3"/><rect x="450" y="230" width="28" height="28" rx="3"/><rect x="500" y="230" width="28" height="28" rx="3"/><rect x="450" y="285" width="28" height="28" rx="3"/><rect x="500" y="285" width="28" height="28" rx="3"/><rect x="450" y="340" width="28" height="28" rx="3"/><rect x="500" y="340" width="28" height="28" rx="3"/></g></g>
+<path d="M110 500 H790" stroke="#d1c6ad" stroke-width="2"/>
+<circle cx="760" cy="100" r="22" fill="#c18a19" opacity=".8"/>
+</svg>
