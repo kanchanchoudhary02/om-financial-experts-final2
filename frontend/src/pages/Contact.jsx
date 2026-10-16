@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { API_BASE_URL } from '../api.js';
+import { CONTACT_API_URL } from '../api.js';
 import {
   Phone,
   Mail,
@@ -48,7 +48,7 @@ export default function Contact() {
     );
 
     try {
-      const res = await fetch(`${API_BASE_URL}/api/contact`, {
+      const res = await fetch(CONTACT_API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -270,7 +270,7 @@ export default function Contact() {
                 type="tel"
                 autoComplete="tel"
                 inputMode="tel"
-                pattern="[0-9+\\(\\) \\-]{8,}"
+                pattern="[0-9+() -]{8,}"
                 placeholder={t(
                   '10-Digit Mobile Number',
                   '10 अंकों का मोबाइल नंबर',

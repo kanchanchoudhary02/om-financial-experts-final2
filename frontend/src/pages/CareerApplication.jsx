@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Layout, PageHero } from '../components/Shared.jsx';
-import { API_BASE_URL } from '../api.js';
+import { CONTACT_API_URL } from '../api.js';
 import { useLang } from '../i18n.jsx';
 
 export default function CareerApplication() {
@@ -19,7 +19,7 @@ export default function CareerApplication() {
     const payload = { ...values, topic, message: values.message || `Application for ${values.joinRole}; work type: ${values.workType}` };
     delete payload.website;
     try {
-      const response = await fetch(`${API_BASE_URL}/api/contact`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+      const response = await fetch(CONTACT_API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
       const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(data.message || t('We could not send your application. Please try again.', 'हम आपका आवेदन नहीं भेज सके। कृपया फिर से कोशिश करें।', 'Hum aapka application nahi bhej sake. Kripya phir se koshish karein.'));
       setStatus({ type: 'ok', msg: t('Thank you for your interest. Your application has been sent successfully.', 'आपकी रुचि के लिए धन्यवाद। आपका आवेदन सफलतापूर्वक भेज दिया गया है।', 'Aapki ruchi ke liye dhanyavaad. Aapka application safaltapoorvak bhej diya gaya hai.') });
@@ -41,7 +41,7 @@ export default function CareerApplication() {
         {status.msg && <div className={status.type === 'ok' ? 'alert ok' : 'alert err'} role="status">{status.msg}</div>}
         <input type="text" name="website" tabIndex="-1" autoComplete="off" className="hp" aria-hidden="true" />
         <label>{t('Full Name', 'पूरा नाम', 'Poora Naam')}<input required name="name" autoComplete="name" placeholder={t('Your Name', 'आपका नाम', 'Aapka Naam')} /></label>
-        <label>{t('Phone Number', 'फ़ोन नंबर', 'Phone Number')}<input required name="phone" type="tel" autoComplete="tel" inputMode="tel" pattern="[0-9+\\(\\) \\-]{8,}" placeholder={t('10-Digit Mobile Number', '10 अंकों का मोबाइल नंबर', '10-Digit Mobile Number')} /></label>
+        <label>{t('Phone Number', 'फ़ोन नंबर', 'Phone Number')}<input required name="phone" type="tel" autoComplete="tel" inputMode="tel" pattern="[0-9+() -]{8,}" placeholder={t('10-Digit Mobile Number', '10 अंकों का मोबाइल नंबर', '10-Digit Mobile Number')} /></label>
         <label>{t('Email (Optional)', 'ईमेल (वैकल्पिक)', 'Email (Optional)')}<input name="email" type="email" autoComplete="email" placeholder="you@example.com" /></label>
         <label>{t('Work Type', 'काम का प्रकार', 'Work Type')}<select name="workType" defaultValue="" required><option value="" disabled>{t('Select part-time or full-time', 'पार्ट-टाइम या फुल-टाइम चुनें', 'Part-time ya full-time chunein')}</option><option value="Part-time">{t('Part-time', 'पार्ट-टाइम', 'Part-time')}</option><option value="Full-time">{t('Full-time', 'फुल-टाइम', 'Full-time')}</option></select></label>
         <label>{t('Current Occupation', 'वर्तमान व्यवसाय', 'Current Occupation')}<select name="currentOccupation" defaultValue="" required><option value="" disabled>{t('Select your current occupation', 'अपना वर्तमान व्यवसाय चुनें', 'Apna current occupation chunein')}</option><option value="Student">Student</option><option value="Salaried Employee">Salaried Employee</option><option value="Self-employed / Business">Self-employed / Business</option><option value="Homemaker">Homemaker</option><option value="Freelancer">Freelancer</option><option value="Looking for work">Looking for work</option><option value="Retired">Retired</option><option value="Other">Other</option></select></label>

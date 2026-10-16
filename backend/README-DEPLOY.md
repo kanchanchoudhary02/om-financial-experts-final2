@@ -7,6 +7,6 @@ Deploy the `backend` folder as a Node.js service (Node 18+). Set these environme
 - `RESEND_API_KEY` = your Resend API key
 - `CONTACT_TO` = inbox that should receive enquiries
 - `CONTACT_FROM` = verified sender, e.g. `OM Financial Experts <noreply@your-verified-domain.com>`
-- `FRONTEND_URL` = production frontend origin, e.g. `https://your-domain.com` (multiple origins comma-separated). `https://omfinancialexperts.com` is allowed by default.
+- `FRONTEND_URL` = production frontend origin, e.g. `https://your-domain.com` (multiple origins comma-separated). `https://omfinancialexperts.com` and `https://www.omfinancialexperts.com` are allowed by default.
 
-The API endpoint is `POST /api/contact`; health check is `GET /api/health`. Career applications are saved to MongoDB `contact_enquiries` and the email includes role/work type, education, age group and address. Set `VITE_API_BASE_URL` in the frontend build environment to the deployed backend base URL (without `/api`); never set it to `localhost` for a production build. The frontend ignores a localhost API override in production and falls back to `https://om-financial-experts.onrender.com`.
+The API endpoint is `POST /api/contact`; health check is `GET /api/health`. Career applications are saved to MongoDB `contact_enquiries` and the email includes role/work type, education, age group and address. Set `VITE_API_BASE_URL` in the frontend build environment to `https://om-financial-experts-final2.onrender.com` (without `/api`). The frontend ignores a localhost API override in production and uses this production URL by default.

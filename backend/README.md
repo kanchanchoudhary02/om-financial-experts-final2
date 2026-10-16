@@ -30,7 +30,7 @@ The backend will not start if MongoDB is not configured or cannot connect, to av
 - Build command: `npm install`
 - Start command: `npm start`
 - Add the environment variables from `.env.example` in the host dashboard. Do not upload `.env` or expose `RESEND_API_KEY` in frontend environment variables.
-- Keep `VITE_API_BASE_URL` on the frontend pointing to the deployed backend URL; this is an existing frontend setting and does not require code changes.
+- Set the frontend build variable `VITE_API_BASE_URL` to `https://om-financial-experts-final2.onrender.com` (without `/api`). The frontend uses `http://localhost:5000` only for local development and falls back to the production URL when building for production.
 
 ## Troubleshooting
 - `emailConfigured: false`: check `RESEND_API_KEY`, `CONTACT_TO`, and `CONTACT_FROM` are all set.

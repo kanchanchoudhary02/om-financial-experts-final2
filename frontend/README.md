@@ -21,4 +21,4 @@
 - `/our-commitment` Our Commitment
 - `/contact` Contact
 
-The contact form sends enquiries to the companion `om-financial-experts-backend` API. Configure `VITE_API_BASE_URL` in the frontend and the Resend variables in the backend before testing email delivery. Figures and professional experience are business-supplied and should be verified before publishing. Financial products are subject to eligibility, terms and market risks.
+The contact and career forms use the centralized contact API configuration. Set `VITE_API_BASE_URL` in the frontend build environment to `https://om-financial-experts-final2.onrender.com` (without `/api`) for production; local development defaults to `http://localhost:5000`. Configure the Resend variables in the backend before testing email delivery. Figures and professional experience are business-supplied and should be verified before publishing. Financial products are subject to eligibility, terms and market risks.

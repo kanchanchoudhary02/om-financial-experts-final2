@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Layout, PageHero } from '../components/Shared.jsx';
-import { API_BASE_URL } from '../api.js';
+import { CONTACT_API_URL } from '../api.js';
 import { useLang } from '../i18n.jsx';
 
 export default function JoinUs() {
@@ -18,7 +18,7 @@ export default function JoinUs() {
     const payload = { ...values, topic, message: values.message || `General Join Us enquiry for ${values.joinRole}` };
     delete payload.website;
     try {
-      const response = await fetch(`${API_BASE_URL}/api/contact`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+      const response = await fetch(CONTACT_API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
       const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(data.message || t('We could not send your details. Please try again.', 'आपकी जानकारी नहीं भेजी जा सकी। कृपया फिर कोशिश करें।', 'Aapki details nahi bheji ja saki. Kripya phir koshish karein.'));
       setStatus({ type: 'ok', msg: t('Thank you. Your details have been sent successfully.', 'धन्यवाद। आपकी जानकारी सफलतापूर्वक भेज दी गई है।', 'Dhanyavaad. Aapki details successfully send ho gayi hain.') });
@@ -39,7 +39,7 @@ export default function JoinUs() {
         {status.msg && <div className={status.type === 'ok' ? 'alert ok' : 'alert err'} role="status">{status.msg}</div>}
         <input type="text" name="website" tabIndex="-1" autoComplete="off" className="hp" aria-hidden="true" />
         <label>{t('Full Name', 'पूरा नाम', 'Poora Naam')}<input required name="name" autoComplete="name" placeholder={t('Your Name', 'आपका नाम', 'Aapka Naam')}/></label>
-        <label>{t('Phone Number', 'फ़ोन नंबर', 'Phone Number')}<input required name="phone" type="tel" autoComplete="tel" inputMode="tel" pattern="[0-9+\\(\\) \\-]{8,}" placeholder={t('10-Digit Mobile Number', '10 अंकों का मोबाइल नंबर', '10-Digit Mobile Number')}/></label>
+        <label>{t('Phone Number', 'फ़ोन नंबर', 'Phone Number')}<input required name="phone" type="tel" autoComplete="tel" inputMode="tel" pattern="[0-9+() -]{8,}" placeholder={t('10-Digit Mobile Number', '10 अंकों का मोबाइल नंबर', '10-Digit Mobile Number')}/></label>
         <label>{t('Email (Optional)', 'ईमेल (वैकल्पिक)', 'Email (Optional)')}<input name="email" type="email" autoComplete="email" placeholder="you@example.com"/></label>
         <label>{t('Current Occupation', 'वर्तमान व्यवसाय', 'Current Occupation')}<select name="currentOccupation" required defaultValue=""><option value="" disabled>{t('Select your current occupation', 'अपना वर्तमान व्यवसाय चुनें', 'Apna current occupation chunein')}</option><option value="Student">Student</option><option value="Salaried Employee">Salaried Employee</option><option value="Self-employed / Business">Self-employed / Business</option><option value="Homemaker">Homemaker</option><option value="Freelancer">Freelancer</option><option value="Looking for work">Looking for work</option><option value="Retired">Retired</option><option value="Other">Other</option></select></label>
         <label>{t('Which role would you like to join?', 'आप किस पद पर जुड़ना चाहेंगे?', 'Aap kis role me join karna chahenge?')}<select name="joinRole" value={selectedRole} onChange={e => setSelectedRole(e.target.value)} required><option value="" disabled>{t('Select a Role', 'भूमिका चुनें', 'Role chunein')}</option><option value="Financial Consultant">Financial Consultant</option><option value="Team Leader">Team Leader</option></select></label>

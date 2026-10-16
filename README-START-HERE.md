@@ -7,7 +7,7 @@ Terminal 1: `cd backend && npm install`, copy `.env.example` to `.env`, add your
 Terminal 2: `cd frontend && npm install && npm run dev`
 
 ## Deploy
-- Frontend: build `npm run build`, publish `dist`. SPA rewrites are included (`vercel.json`, `public/_redirects`). Set `VITE_API_BASE_URL` to your backend URL before building.
+- Frontend: build `npm run build`, publish `dist`. SPA rewrites are included (`vercel.json`, `public/_redirects`). Set `VITE_API_BASE_URL` to `https://om-financial-experts-final2.onrender.com` (without `/api`) in the production build environment.
 - Backend: env vars `FRONTEND_URL`, `RESEND_API_KEY`, `CONTACT_TO`, `CONTACT_FROM` (sender on a verified Resend domain).
 
 ## Before going live (owner to confirm)
