@@ -24,7 +24,7 @@ function ScrollToTop() {
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <LangProvider>
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
